@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{listings}
+\usepackage{array,longtable}
 \usepackage{multirow}
 \usepackage[table]{xcolor}
 \usepackage[linesnumbered,lined,boxed,commentsnumbered,ruled]{algorithm2e}
@@ -43,7 +44,7 @@ voir manuel
 
 \subsection{Procédure démarrage}
 
-\begin{tabular}{|c|c|c|}
+\begin{longtable}{|c|c|c|}
   \hline
   & \textbf{Élément} & \textbf{Action} \\
   \hline
@@ -81,28 +82,50 @@ voir manuel
   & Canopy & fermer \\
   \hline
   \multirow{5}{*}{\textbf{Radio}}
-  & UHF (Radio aux - haut/red) & [M] \\
-  & U/VHF (Radio principale - bas/green) & [Pal]/[Pal+G] \\
+  & UHF (haut/red) & [M] \\
+  & U/VHF (bas/green) & [Pal]/[Pal+G] \\
   & Molette choix fréquence & [M] \\
   & Radio & Choisir fréqunce \\
   & Menu Communication & ATC - Request  startup \\
   \hline
-  \multirow{5}{*}{\textbf{Horizon}}
+  \multirow{3}{*}{\textbf{Horizon}}
   & INS Auxiliary Heading/Horizon & M \\
-  & Backup ADI & appuyer (et center) \\
-  & INS Operational Mode & N \\
+  & Backup ADI & Décager \\
+  & Backup ADI & Centrer \\
+  \hline
+  \multirow{3}{*}{\textbf{INS}}
+  & Témoin prêt & Attendre \\
   & INS Mode Selector & Nav \\
+  & INS Operational Mode & N \\
+  \hline
+  \multirow{11}{*}{\textbf{Moteur}}
   & Frein de parking & Activer\\
-  & Pompes gauche/droite & Allumer \\
-  & Vanne coupe-feu & ouvrir \\
-  & Pompe basse-pression  & Allumer \\
-  & Bouton allumage & maintenir 1 seconde \\
-  & Gaz & Ralenti \\
+  & Vanne coupe-feu & Ouvrir \\
+  & Pompe carburant démarrage & Allumer \\
+  & Pompes carburant gauche/droite & Allumer \\
+  & Bougie de démarrage & [Gauche]/[Droite] \\
+  & Bouton extinction moteur & Appuyer \\
+  & Manette des Gaz & Minimum \\
+  & Bouton allumage & Maintenir 1 seconde \\
+  & Manette des Gaz & Ralenti \\
   & Menu Communication &  Équipe au sol - Groupe et parc - Off \\
+  & Cache bouton allumage & Fermer \\
   \hline
   \multirow{1}{*}{\textbf{Tests}}
-  & Voyants alarme & Tester (À côté de ALT.2)\\
+  & Réchauffe sondes Pitot & [M] \\
+  & Pompe hydraulique & [Auto]
+  \hline
+  \multirow{1}{*}{\textbf{Tests}}
+  & Voyants alarme & Tester (À côté de ALT.2) \\
+  & Pilote Automatique & Tester \\
+  & Fly-by-wire & Tester \\
+  & Becs de bord d'attaque & [Sortir] \\
+  & Becs de bord d'attaque & [Auto] \\
+  \hline
+  & Auti-dérapage & Basculer \\
+  & Phares de roulage & Allumer \\
+  & Audio warnings & Allumer
   \hline
 
-\end{tabular}
+\end{longtable}
 \end{document}
